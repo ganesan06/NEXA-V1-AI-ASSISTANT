@@ -1,0 +1,11 @@
+google-adk
+fastapi
+uvicorn
+python-dotenv
+pyautogui
+pywinauto
+pywebview
+
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib

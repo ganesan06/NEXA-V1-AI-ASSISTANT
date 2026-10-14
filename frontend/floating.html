@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NEXA Float</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/floating.css"
+    >
+</head>
+
+<body>
+
+    <div class="float-app">
+
+        <header class="float-header">
+
+            <div class="brand">
+                <div class="logo">
+                    ✦
+                </div>
+
+                <div>
+                    <h1>NEXA</h1>
+                    <span>Floating Chat</span>
+                </div>
+            </div>
+
+            <div class="online">
+                <span class="green-dot"></span>
+                ONLINE
+            </div>
+
+        </header>
+
+
+        <main
+            id="floatingMessages"
+            class="messages"
+        >
+
+            <section class="message user">
+
+                <div class="label">
+                    YOU
+                </div>
+
+                <div
+                    id="promptText"
+                    class="bubble user-bubble"
+                >
+                    Loading prompt...
+                </div>
+
+            </section>
+
+
+            <section class="message">
+
+                <div class="label">
+                    NEXA
+                </div>
+
+                <div
+                    id="responseText"
+                    class="bubble"
+                >
+                    Loading response...
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <div
+            id="floatingThinking"
+            class="thinking hidden"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <p>
+                NEXA is working...
+            </p>
+        </div>
+
+
+        <section class="composer">
+
+            <textarea
+                id="floatingInput"
+                rows="1"
+                placeholder="Continue this conversation..."
+            ></textarea>
+
+            <button
+                id="floatingSend"
+                class="send-button"
+                title="Send"
+            >
+                ➜
+            </button>
+
+        </section>
+
+
+        <footer>
+
+            <div>
+                <span class="green-dot"></span>
+                NEXA
+            </div>
+
+            <span>
+                FLOAT MODE
+            </span>
+
+        </footer>
+
+    </div>
+
+
+    <script src="/static/floating.js"></script>
+
+</body>
+
+</html>

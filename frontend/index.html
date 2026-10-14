@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width,
+        initial-scale=1.0"
+    >
+
+    <title>NEXA</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div
+    id="app"
+    class="app"
+>
+
+    <!-- =============================================== -->
+    <!-- HISTORY SIDEBAR -->
+    <!-- =============================================== -->
+
+    <aside
+        id="historyPanel"
+        class="sidebar"
+    >
+
+        <div class="sidebar-top">
+
+            <div class="sidebar-brand">
+
+                <div class="logo">
+                    ✦
+                </div>
+
+                <div class="brand-text">
+
+                    <strong>
+                        NEXA
+                    </strong>
+
+                    <span>
+                        Desktop AI
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="collapseButton"
+                class="collapse-button"
+                title="Close history"
+            >
+                ‹
+            </button>
+
+        </div>
+
+
+        <button
+            id="newChatButton"
+            class="new-chat"
+        >
+
+            <span>
+                +
+            </span>
+
+            <span class="sidebar-text">
+                New Chat
+            </span>
+
+        </button>
+
+
+        <div
+            class="history-heading
+            sidebar-text"
+        >
+            HISTORY
+        </div>
+
+
+        <div
+            id="historyList"
+            class="history-list"
+        ></div>
+
+    </aside>
+
+
+    <!-- =============================================== -->
+    <!-- OPEN HISTORY BUTTON -->
+    <!-- =============================================== -->
+
+    <button
+        id="openHistoryButton"
+        class="open-history-button hidden"
+        title="Open history"
+    >
+        ›
+    </button>
+
+
+    <!-- =============================================== -->
+    <!-- MAIN -->
+    <!-- =============================================== -->
+
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    NEXA
+                </h1>
+
+                <span
+                    id="headerStatus"
+                >
+                    Ready
+                </span>
+
+            </div>
+
+
+            <div class="top-right">
+
+                <div class="agent-mini">
+
+                    <span
+                        class="green-dot"
+                    ></span>
+
+                    <span
+                        id="headerAgent"
+                    >
+                        NEXA
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ACTIVE AGENT -->
+
+        <section
+            id="agentCard"
+            class="agent-card"
+        >
+
+            <div
+                id="agentIcon"
+                class="agent-icon"
+            >
+                ✦
+            </div>
+
+
+            <div
+                class="agent-information"
+            >
+
+                <span class="label">
+                    ACTIVE AGENT
+                </span>
+
+
+                <div class="agent-title">
+
+                    <strong
+                        id="agentName"
+                    >
+                        NEXA
+                    </strong>
+
+                    <span
+                        class="green-dot"
+                    ></span>
+
+                </div>
+
+
+                <span
+                    id="agentStatus"
+                    class="agent-status"
+                >
+                    Ready
+                </span>
+
+            </div>
+
+
+            <div
+                id="agentAnimation"
+                class="agent-animation hidden"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAT -->
+
+        <section
+            id="chat"
+            class="messages"
+        ></section>
+
+
+        <!-- THINKING -->
+
+        <div
+            id="thinking"
+            class="thinking hidden"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <p>
+                NEXA is working...
+            </p>
+
+        </div>
+
+
+        <!-- INPUT -->
+
+        <section class="composer">
+
+            <textarea
+                id="messageInput"
+                rows="1"
+                placeholder="Ask NEXA anything..."
+            ></textarea>
+
+
+            <button
+                id="stopButton"
+                class="stop-button hidden"
+                title="Stop"
+            >
+                ■
+            </button>
+
+
+            <button
+                id="sendButton"
+                class="send-button"
+                title="Send"
+            >
+                ➜
+            </button>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div>
+
+                <span
+                    class="green-dot"
+                ></span>
+
+                ONLINE
+
+            </div>
+
+
+            <span
+                id="footerAgent"
+            >
+                NEXA CORE
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script
+    src="/static/script.js"
+></script>
+
+</body>
+
+</html>
