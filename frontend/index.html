@@ -1,33 +1,26 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
         name="viewport"
-        content="width=device-width,
-        initial-scale=1.0"
+        content="width=device-width, initial-scale=1.0"
     >
 
     <title>NEXA</title>
 
     <link
         rel="stylesheet"
-        href="/static/style.css"
+        href="./style.css"
     >
-
 </head>
-
 
 <body>
 
-<div
-    id="app"
-    class="app"
->
+<div id="app" class="app">
 
     <!-- =============================================== -->
     <!-- HISTORY SIDEBAR -->
@@ -48,53 +41,42 @@
 
                 <div class="brand-text">
 
-                    <strong>
-                        NEXA
-                    </strong>
+                    <strong>NEXA</strong>
 
-                    <span>
-                        Desktop AI
-                    </span>
+                    <span>Desktop AI</span>
 
                 </div>
 
             </div>
 
-
             <button
                 id="collapseButton"
                 class="collapse-button"
                 title="Close history"
+                type="button"
             >
                 ‹
             </button>
 
         </div>
 
-
         <button
             id="newChatButton"
             class="new-chat"
+            type="button"
         >
-
-            <span>
-                +
-            </span>
+            <span>+</span>
 
             <span class="sidebar-text">
                 New Chat
             </span>
-
         </button>
 
+        <!-- HISTORY -->
 
-        <div
-            class="history-heading
-            sidebar-text"
-        >
+        <div class="history-heading sidebar-text">
             HISTORY
         </div>
-
 
         <div
             id="historyList"
@@ -102,7 +84,6 @@
         ></div>
 
     </aside>
-
 
     <!-- =============================================== -->
     <!-- OPEN HISTORY BUTTON -->
@@ -112,10 +93,10 @@
         id="openHistoryButton"
         class="open-history-button hidden"
         title="Open history"
+        type="button"
     >
         ›
     </button>
-
 
     <!-- =============================================== -->
     <!-- MAIN -->
@@ -123,37 +104,27 @@
 
     <main class="main">
 
-
         <!-- HEADER -->
 
         <header class="topbar">
 
             <div>
 
-                <h1>
-                    NEXA
-                </h1>
+                <h1>NEXA</h1>
 
-                <span
-                    id="headerStatus"
-                >
+                <span id="headerStatus">
                     Ready
                 </span>
 
             </div>
 
-
             <div class="top-right">
 
                 <div class="agent-mini">
 
-                    <span
-                        class="green-dot"
-                    ></span>
+                    <span class="green-dot"></span>
 
-                    <span
-                        id="headerAgent"
-                    >
+                    <span id="headerAgent">
                         NEXA
                     </span>
 
@@ -162,7 +133,6 @@
             </div>
 
         </header>
-
 
         <!-- ACTIVE AGENT -->
 
@@ -178,30 +148,21 @@
                 ✦
             </div>
 
-
-            <div
-                class="agent-information"
-            >
+            <div class="agent-information">
 
                 <span class="label">
                     ACTIVE AGENT
                 </span>
 
-
                 <div class="agent-title">
 
-                    <strong
-                        id="agentName"
-                    >
+                    <strong id="agentName">
                         NEXA
                     </strong>
 
-                    <span
-                        class="green-dot"
-                    ></span>
+                    <span class="green-dot"></span>
 
                 </div>
-
 
                 <span
                     id="agentStatus"
@@ -212,28 +173,27 @@
 
             </div>
 
-
             <div
                 id="agentAnimation"
                 class="agent-animation hidden"
             >
-
                 <span></span>
                 <span></span>
                 <span></span>
-
             </div>
 
         </section>
 
-
+        <!-- =============================================== -->
         <!-- CHAT -->
+        <!-- =============================================== -->
 
         <section
             id="chat"
             class="messages"
+            aria-label="Chat messages"
+            aria-live="polite"
         ></section>
-
 
         <!-- THINKING -->
 
@@ -241,19 +201,16 @@
             id="thinking"
             class="thinking hidden"
         >
-
             <span></span>
             <span></span>
             <span></span>
 
-            <p>
-                NEXA is working...
-            </p>
-
+            <p>NEXA is working...</p>
         </div>
 
-
+        <!-- =============================================== -->
         <!-- INPUT -->
+        <!-- =============================================== -->
 
         <section class="composer">
 
@@ -261,47 +218,41 @@
                 id="messageInput"
                 rows="1"
                 placeholder="Ask NEXA anything..."
+                aria-label="Message NEXA"
             ></textarea>
-
 
             <button
                 id="stopButton"
                 class="stop-button hidden"
                 title="Stop"
+                type="button"
             >
                 ■
             </button>
-
 
             <button
                 id="sendButton"
                 class="send-button"
                 title="Send"
+                type="button"
             >
                 ➜
             </button>
 
         </section>
 
-
+        <!-- =============================================== -->
         <!-- FOOTER -->
+        <!-- =============================================== -->
 
         <footer>
 
             <div>
-
-                <span
-                    class="green-dot"
-                ></span>
-
+                <span class="green-dot"></span>
                 ONLINE
-
             </div>
 
-
-            <span
-                id="footerAgent"
-            >
+            <span id="footerAgent">
                 NEXA CORE
             </span>
 
@@ -311,11 +262,9 @@
 
 </div>
 
+<!-- VERCEL STATIC JAVASCRIPT PATH -->
 
-<script
-    src="/static/script.js"
-></script>
+<script src="./script.js"></script>
 
 </body>
-
 </html>
